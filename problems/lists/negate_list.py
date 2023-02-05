@@ -7,8 +7,14 @@ def negate_list(lst):
     # Replace the following line with your code.
     # After running your code, variable n should contain the value
     # we ask you to compute in this exercise
-    new_lst = None
-
+    new_lst = []
+    for i in lst:
+        if i < 0:
+            i += (-2) * i 
+            new_lst.append(i)
+        else:
+            i = i
+            new_lst.append(i)
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return new_lst
 
