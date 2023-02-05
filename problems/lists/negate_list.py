@@ -8,13 +8,12 @@ def negate_list(lst):
     # After running your code, variable n should contain the value
     # we ask you to compute in this exercise
     new_lst = []
+    if lst == []:
+        return []
     for i in lst:
-        if i < 0:
-            i += (-2) * i 
+        i = (-1) * i 
             new_lst.append(i)
-        else:
-            i = i
-            new_lst.append(i)
+
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return new_lst
 
